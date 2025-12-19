@@ -9,7 +9,7 @@ import iconHotline from "../img/Featured icon (1).png";
 import iconEmail from "../img/Featured icon (2).png";
 import iconfacebook from "../img/facebook.png";
 import iconyoutube from "../img/youtube.png";
-import iconHome from "../img/home.png";
+import iconHome from "../img/home2.png";
 import iconBook from "../img/book (1).png";
 import clock from "../img/clock2.png";
 import iconBook2 from "../img/book2.png";
@@ -93,7 +93,11 @@ export default function Article() {
                   <p>{item.description}</p>
                   <div className="article-blog-meta">
                     <span className="article-meta-item">
-                      <img src={clock} alt="Views" className="article-meta-icon" />{" "}
+                      <img
+                        src={clock}
+                        alt="Views"
+                        className="article-meta-icon"
+                      />{" "}
                       {item.views}
                     </span>
                     <span className="article-meta-item">

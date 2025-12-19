@@ -14,7 +14,7 @@ import img2 from "../img/Image 2.png";
 import clock from "../img/clock.png";
 import book from "../img/book.png";
 import profiler from "../img/profile.png";
-import iconHome from "../img/home.png";
+import iconHome from "../img/home2.png";
 import iconBook from "../img/book (1).png";
 import { useNavigate } from "react-router-dom";
 
@@ -226,7 +226,11 @@ export default function Dashboard() {
           <div className="homepage-col social">
             <h3 className="homepage-col-title">THEO DÕI CHÚNG TÔI TẠI</h3>
             <div className="homepage-social-icons" aria-hidden>
-              <a href="#" className="homepage-social-btn" aria-label="Facebook">
+              <a
+                href="https://www.facebook.com/rikkeiacademy.vn"
+                className="homepage-social-btn"
+                aria-label="Facebook"
+              >
                 <img src={iconfacebook} alt="Facebook" />
               </a>
               <a

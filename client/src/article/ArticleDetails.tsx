@@ -9,7 +9,7 @@ import iconHotline from "../img/Featured icon (1).png";
 import iconEmail from "../img/Featured icon (2).png";
 import iconfacebook from "../img/facebook.png";
 import iconyoutube from "../img/youtube.png";
-import iconHome from "../img/home.png";
+import iconHome from "../img/home2.png";
 import iconBook from "../img/book (1).png";
 import imgArticleDetails from "../img/anhbaiviet1.png";
 import imgArticleDetails2 from "../img/anhbaiviet2.png";
@@ -35,7 +35,10 @@ export default function ArticleDetails() {
             >
               <img src={iconHome} alt="Home" /> Trang chủ
             </span>
-            <span className="articledetails-nav-item" onClick={() => navigate("/Article")}>
+            <span
+              className="articledetails-nav-item"
+              onClick={() => navigate("/Article")}
+            >
               <img src={iconBook} alt="Blog" /> Bài viết
             </span>
           </nav>
@@ -43,7 +46,11 @@ export default function ArticleDetails() {
 
         <div className="articledetails-header-actions">
           <img src={searchIcon} alt="Search" className="articledetails-icon" />
-          <img src={notification} alt="Notification" className="articledetails-icon" />
+          <img
+            src={notification}
+            alt="Notification"
+            className="articledetails-icon"
+          />
           <img src={avatarImg} className="articledetails-avatar" alt="Avatar" />
         </div>
       </header>
@@ -141,7 +148,11 @@ export default function ArticleDetails() {
             <h3 className="articledetails-col-title">THÔNG TIN LIÊN HỆ</h3>
             <ul className="articledetails-contact-list">
               <li>
-                <img src={iconAddress} alt="Address" className="articledetails-icon" />
+                <img
+                  src={iconAddress}
+                  alt="Address"
+                  className="articledetails-icon"
+                />
                 <div>
                   <strong>Địa chỉ:</strong>
                   <div>
@@ -150,14 +161,22 @@ export default function ArticleDetails() {
                 </div>
               </li>
               <li>
-                <img src={iconHotline} alt="Hotline" className="articledetails-icon" />
+                <img
+                  src={iconHotline}
+                  alt="Hotline"
+                  className="articledetails-icon"
+                />
                 <div>
                   <strong>Hotline:</strong>
                   <div>0835 662 538</div>
                 </div>
               </li>
               <li>
-                <img src={iconEmail} alt="Email" className="articledetails-icon" />
+                <img
+                  src={iconEmail}
+                  alt="Email"
+                  className="articledetails-icon"
+                />
                 <div>
                   <strong>Email:</strong>
                   <div>support@mankai.edu.vn</div>
@@ -169,7 +188,11 @@ export default function ArticleDetails() {
           <div className="articledetails-col social">
             <h3 className="articledetails-col-title">THEO DÕI CHÚNG TÔI TẠI</h3>
             <div className="articledetails-social-icons" aria-hidden>
-              <a href="#" className="articledetails-social-btn" aria-label="Facebook">
+              <a
+                href="#"
+                className="articledetails-social-btn"
+                aria-label="Facebook"
+              >
                 <img src={iconfacebook} alt="Facebook" />
               </a>
               <a

@@ -3,7 +3,7 @@ import logo from "../img/mankailogo.png";
 import searchIcon from "../img/search-normal.png";
 import avatarImg from "../img/Avatar.png";
 import notification from "../img/notification.png";
-import iconHome from "../img/home.png";
+import iconHome from "../img/home2.png";
 import iconBook from "../img/book (1).png";
 import clockIcon from "../img/clock2.png";
 import { useNavigate } from "react-router-dom";
