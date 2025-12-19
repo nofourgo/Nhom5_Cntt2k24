@@ -31,44 +31,44 @@ export default function Article() {
   }));
 
   return (
-    <div className="home-container">
-      <header className="header">
-        <div className="header-left">
+    <div className="article-home-container">
+      <header className="article-header">
+        <div className="article-header-left">
           <img
             src={logo}
             alt="Logo"
-            className="logo"
+            className="article-logo"
             onClick={() => navigate("/")}
           />
-          <nav className="nav">
+          <nav className="article-nav">
             <span
-              className="nav-item active"
+              className="article-nav-item active"
               onClick={() => navigate("/HomePage")}
             >
               <img src={iconHome} alt="Home" /> Trang chủ
             </span>
-            <span className="nav-item">
+            <span className="article-nav-item">
               <img src={iconBook} alt="Blog" /> Bài viết
             </span>
           </nav>
         </div>
 
-        <div className="header-actions">
-          <img src={searchIcon} alt="Search" className="icon" />
-          <img src={notification} alt="Notification" className="icon" />
-          <img src={avatarImg} alt="Avatar" className="avatar" />
+        <div className="article-header-actions">
+          <img src={searchIcon} alt="Search" className="article-icon" />
+          <img src={notification} alt="Notification" className="article-icon" />
+          <img src={avatarImg} alt="Avatar" className="article-avatar" />
         </div>
       </header>
 
-      <div className="blog-page">
-        <div className="blog-banner">
+      <div className="article-blog-page">
+        <div className="article-blog-banner">
           <img src={banner} alt="Banner" />
-          <p className="breadcrumb">Trang chủ / Bài viết</p>
+          <p className="article-breadcrumb">Trang chủ / Bài viết</p>
           <h1>Bài viết</h1>
         </div>
 
-        <div className="blog-container">
-          <div className="blog-header">
+        <div className="article-blog-container">
+          <div className="article-blog-header">
             <h3>
               Tất cả bài viết <span>(120)</span>
             </h3>
@@ -79,28 +79,28 @@ export default function Article() {
           </div>
           <hr />
 
-          <div className="blog-grid">
+          <div className="article-blog-grid">
             {blogs.map((item) => (
               <div
-                className="blog-card"
+                className="article-blog-card"
                 key={item.id}
                 onClick={() => navigate("/ArticleDetails")}
               >
                 <img src={item.image} alt={item.title} />
-                <div className="blog-card-content">
-                  <span className="tag">{item.category}</span>
+                <div className="article-blog-card-content">
+                  <span className="article-tag">{item.category}</span>
                   <h4>{item.title}</h4>
                   <p>{item.description}</p>
-                  <div className="blog-meta">
-                    <span className="meta-item">
-                      <img src={clock} alt="Views" className="meta-icon" />{" "}
+                  <div className="article-blog-meta">
+                    <span className="article-meta-item">
+                      <img src={clock} alt="Views" className="article-meta-icon" />{" "}
                       {item.views}
                     </span>
-                    <span className="meta-item">
+                    <span className="article-meta-item">
                       <img
                         src={iconBook2}
                         alt="Reading time"
-                        className="meta-icon"
+                        className="article-meta-icon"
                       />{" "}
                       {item.time}
                     </span>
@@ -112,24 +112,24 @@ export default function Article() {
         </div>
       </div>
 
-      <footer className="site-footer" role="contentinfo">
-        <div className="footer-top">
+      <footer className="article-site-footer" role="contentinfo">
+        <div className="article-footer-top">
           <img
             src={makailogo}
             alt="Mankai Academy logo"
-            className="footer-logo"
+            className="article-footer-logo"
           />
-          <h2 className="footer-title">
+          <h2 className="article-footer-title">
             MANKAI ACADEMY - HỌC VIỆN ĐÀO TẠO PHÁT TRIỂN TIẾNG NHẬT THỰC CHIẾN
           </h2>
         </div>
 
-        <div className="footer-body">
-          <div className="col contact">
-            <h3 className="col-title">THÔNG TIN LIÊN HỆ</h3>
-            <ul className="contact-list">
+        <div className="article-footer-body">
+          <div className="article-col contact">
+            <h3 className="article-col-title">THÔNG TIN LIÊN HỆ</h3>
+            <ul className="article-contact-list">
               <li>
-                <img src={iconAddress} alt="Address" className="icon" />
+                <img src={iconAddress} alt="Address" className="article-icon" />
                 <div>
                   <strong>Địa chỉ:</strong>
                   <div>
@@ -138,14 +138,14 @@ export default function Article() {
                 </div>
               </li>
               <li>
-                <img src={iconHotline} alt="Hotline" className="icon" />
+                <img src={iconHotline} alt="Hotline" className="article-icon" />
                 <div>
                   <strong>Hotline:</strong>
                   <div>0835 662 538</div>
                 </div>
               </li>
               <li>
-                <img src={iconEmail} alt="Email" className="icon" />
+                <img src={iconEmail} alt="Email" className="article-icon" />
                 <div>
                   <strong>Email:</strong>
                   <div>support@mankai.edu.vn</div>
@@ -154,15 +154,15 @@ export default function Article() {
             </ul>
           </div>
 
-          <div className="col social">
-            <h3 className="col-title">THEO DÕI CHÚNG TÔI TẠI</h3>
-            <div className="social-icons" aria-hidden>
-              <a href="#" className="social-btn" aria-label="Facebook">
+          <div className="article-col social">
+            <h3 className="article-col-title">THEO DÕI CHÚNG TÔI TẠI</h3>
+            <div className="article-social-icons" aria-hidden>
+              <a href="#" className="article-social-btn" aria-label="Facebook">
                 <img src={iconfacebook} alt="Facebook" />
               </a>
               <a
                 href="https://www.youtube.com/@RikkeiEducation"
-                className="social-btn"
+                className="article-social-btn"
                 aria-label="Youtube"
               >
                 <img src={iconyoutube} alt="Youtube" />
@@ -170,7 +170,7 @@ export default function Article() {
             </div>
           </div>
 
-          <div className="col quote">
+          <div className="article-col quote">
             <blockquote>
               <p>
                 “Hạnh phúc là điểm khởi đầu của giáo dục và cũng là đích đến
@@ -183,7 +183,7 @@ export default function Article() {
           </div>
         </div>
 
-        <div className="footer-bottom">
+        <div className="article-footer-bottom">
           <small>
             © 2024 By Mankai Academy - Mankai Education. All rights reserved.
           </small>

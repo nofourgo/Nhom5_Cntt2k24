@@ -1,11 +1,14 @@
-.home-container {
+/* ===== GENERAL ===== */
+.elearning-home-container {
   width: 100%;
   min-height: 100vh;
   background: #ffffff;
   font-family: Arial, sans-serif;
+  box-sizing: border-box;
 }
 
-.header {
+/* ===== HEADER ===== */
+.elearning-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -14,26 +17,26 @@
   background: #fff;
 }
 
-/* Logo + menu sát nhau */
-.header-left {
+.elearning-header-left {
   display: flex;
   align-items: center;
-  gap: 12px; /* GIẢM MẠNH khoảng cách */
+  gap: 12px;
 }
 
-.logo {
+.elearning-logo {
   height: 40px;
-  margin-right: 4px; /* sát hơn nữa nếu cần */
   cursor: pointer;
 }
 
-/* Menu */
-.nav {
+.elearning-nav {
   display: flex;
-  gap: 16px; /* khoảng cách giữa Trang chủ & Bài viết */
+  gap: 16px;
 }
 
-.nav-item {
+.elearning-nav-item {
+  display: flex;
+  align-items: center; /* canh giữa icon và chữ */
+  gap: 6px; /* khoảng cách giữa icon và chữ */
   font-size: 15px;
   font-weight: 500;
   color: #555;
@@ -41,32 +44,29 @@
   padding: 4px 0;
 }
 
-.nav-item.active {
-  color: #dd673c;
+.elearning-nav-item.active {
   font-weight: 600;
 }
 
-/* Bên phải */
-.header-actions {
+.elearning-header-actions {
   display: flex;
   align-items: center;
   gap: 18px;
 }
 
-.icon {
+.elearning-icon {
   width: 22px;
   height: 22px;
 }
 
-.avatar {
+.elearning-avatar {
   width: 36px;
   height: 36px;
   border-radius: 50%;
 }
 
-/* main */
-/* ===== LAYOUT ===== */
-.elearning-layout {
+/* ===== MAIN LAYOUT ===== */
+.elearning-elearning-layout {
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
@@ -76,43 +76,39 @@
   background: #fff;
 }
 
-/* ===== MAIN ===== */
-/* Layout */
-.elearning-main {
+/* ===== MAIN CONTENT ===== */
+.elearning-elearning-main {
   background: #fff;
 }
 
-/* Breadcrumb */
-.breadcrumb {
+.elearning-breadcrumb {
   font-size: 14px;
   color: #8c8c8c;
   margin-bottom: 12px;
 }
 
-.breadcrumb span {
+.elearning-breadcrumb span {
   margin: 0 6px;
 }
 
-/* Video card */
-.video-card {
+/* Video section */
+.elearning-video-card {
   background: #fff;
 }
 
-/* Video hero */
-.video-hero {
+.elearning-video-hero {
   background: #c88416;
   border-radius: 6px;
   overflow: hidden;
 }
 
-/* Giữ đúng tỷ lệ video */
-.video-wrapper {
+.elearning-video-wrapper {
   position: relative;
   width: 100%;
   padding-top: 56.25%; /* 16:9 */
 }
 
-.video-wrapper iframe {
+.elearning-video-wrapper iframe {
   position: absolute;
   inset: 0;
   width: 100%;
@@ -120,18 +116,18 @@
   border: none;
 }
 
-/* Content dưới video */
-.video-content {
+/* Video content */
+.elearning-video-content {
   padding: 16px 0;
 }
 
-.course-title-elarning {
+.elearning-course-title-elearning {
   font-size: 22px;
   font-weight: 600;
   margin: 8px 0 4px;
 }
 
-.course-meta {
+.elearning-course-meta {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -140,18 +136,31 @@
   margin-bottom: 16px;
 }
 
+.elearning-course-meta img {
+  margin-right: 4px;
+}
+
 /* Description */
-.course-desc h3 {
+.elearning-course-desc h3 {
   font-size: 16px;
   margin-bottom: 8px;
 }
 
-.course-desc p {
+.elearning-course-desc h5 {
+  font-size: 14px;
+  margin: 8px 0;
+}
+
+.elearning-course-desc p {
   color: #555;
   line-height: 1.6;
 }
 
-.view-more {
+.elearning-course-desc ul {
+  padding-left: 20px;
+}
+
+.elearning-view-more {
   margin-top: 8px;
   padding: 0;
   background: none;
@@ -162,38 +171,63 @@
 }
 
 /* ===== SIDEBAR ===== */
-.elearning-sidebar {
+.elearning-elearning-sidebar {
   border-left: 1px solid #eee;
   padding-left: 16px;
 }
 
-.sidebar-title {
+.elearning-sidebar-title {
   color: #ff7a00;
   margin-bottom: 16px;
 }
 
-.session {
+.elearning-session {
   margin-bottom: 20px;
 }
 
-.session h4 {
+.elearning-session h4 {
   font-size: 14px;
   margin-bottom: 8px;
 }
 
-.session ul {
+.elearning-session ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-.session li {
+.elearning-session li {
   padding: 8px;
   border-radius: 6px;
   cursor: pointer;
 }
 
-.session li.active {
+.elearning-session li.elearning-active {
   background: #fff1e6;
   color: #ff7a00;
+}
+
+/* ===== MEDIA QUERIES ===== */
+@media (max-width: 1024px) {
+  .elearning-elearning-layout {
+    grid-template-columns: 1fr 280px;
+  }
+}
+
+@media (max-width: 900px) {
+  .elearning-elearning-layout {
+    grid-template-columns: 1fr;
+    padding: 16px;
+  }
+
+  .elearning-elearning-sidebar {
+    border-left: none;
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .elearning-course-desc {
+    font-size: 14px;
+  }
 }
